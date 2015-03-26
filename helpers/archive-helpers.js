@@ -10,9 +10,34 @@ var _ = require('underscore');
  */
 
 exports.paths = {
+  arcFile: '../archives/sites.txt',	
+  arcSite: '../archives/', 	
   siteAssets: path.join(__dirname, '../web/public'),
   archivedSites: path.join(__dirname, '../archives/sites'),
   list: path.join(__dirname, '../archives/sites.txt')
+};
+
+exports.getSite = function(request, response){
+	//verify if exists
+	//if so, add to archieve
+
+
+
+};
+
+exports.saveSite = function(request, response){
+	//wait for POST
+	//is it in sites.txt
+	archive.isUrlInList(paramsTBD);
+		//if (isInList)
+			//Y --> Has it finished?
+				//Y--> load from archive 
+				//N--> Display loading page
+			//Not finished
+				//Append to sites.txt	
+
+
+
 };
 
 // Used for stubbing paths for tests, do not modify
